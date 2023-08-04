@@ -1,0 +1,115 @@
+@font-face {
+    font-family: inter;
+    src: url(Inter-Regular.ttf);
+}
+
+*{
+    font-family: inter;
+    box-sizing: border-box;
+}
+
+.numero{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.row-white {
+    background-color: #fff;
+    width: 100%;
+    height: 23px;
+    position: absolute;
+    top: 54px;
+} 
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #b13c4a;
+    width: 339px;
+    height: 186px;
+    animation:  spin2 3s ease infinite alternate;
+    border-radius: 5px;
+    
+   
+}
+
+
+
+.sombra1{
+    clip-path: ellipse(279px 142px at 131% -42%);
+    align-self: flex-end;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 212px;
+    height: 138px;
+    display: flex;
+}
+
+.circle1{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    clip-path: circle();
+    opacity: 0.5;
+    transform: translate(400%, 54%);
+}
+
+.circle2 {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    clip-path: circle();
+    position: absolute;
+    opacity: 0.5;
+    transform: translate(464%, 54%);
+}
+
+.sombra{
+    clip-path: ellipse(354px 167px at -62% 166%);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 212px;
+    height: 89px;
+}
+
+
+p{
+    
+    font-size: 12px;
+    margin: 3px 20px;
+}
+
+.sombra p, .paragrafo p {
+    position: relative;
+    top: 42px;
+    right: -13px;
+}
+.paragrafo{
+    display: flex;
+}
+
+.mudar{
+    transform: translate(-30%, -67%);
+}
+
+@keyframes spin {
+   0%{
+        transform: translate3d(0, -40px, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(0, 20px, 0) rotate(-5deg);
+    }
+    
+}
+
+@keyframes spin2 {
+    0%{
+        transform: translate3d(0, -40px, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(0, 20px, 0) rotate(5deg);
+    }
+
+}
