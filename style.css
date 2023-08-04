@@ -679,10 +679,14 @@ span{
 
     .container-links-secao1 a{
         width: 100%;
-        text-align: center;
+        justify-content: center;
         padding: 20px 20px;
         line-height: normal;
     }
+    .container-links-secao1 a:hover{
+        transform: none;
+    }
+    
 
     .container-links-topo{
         display: none;
