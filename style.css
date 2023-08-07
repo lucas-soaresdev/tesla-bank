@@ -141,7 +141,6 @@
     margin: 20px 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -646,29 +645,16 @@ footer{
         padding: 0 16px;
     }
     
-    .container-links-secao1{
-        justify-content: center;
-        margin-top: 50px;
-    }
-
-    .container-links-secao1 a{
-        width: 100%;
-        justify-content: center;
-        padding: 20px 20px;
-        line-height: normal;
-    }
     .container-links-secao1 a:hover{
         transform: none;
     }
     
-
     .container-links-topo{
         display: none;
     }
 
     .secao1 h1{
         margin-bottom: 20px;
-        font-size: 40px;
     }
 
     .secao1 p{
@@ -681,20 +667,6 @@ footer{
         justify-content: space-around;
 
     }
-
-    .container-icones{
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .apple-icone{
-        width: 40px;    
-    }
-    
-     .googleplay-icone {
-        width: 35px;
-    }
-
     .secao2 .container-smartphone{
         display: none;
     }
@@ -839,5 +811,22 @@ footer{
 @media (max-width: 1152px){
     .vantagens-secao3-up, .vantagens-secao3-down{
         justify-content: center;
+    }
+}
+@media screen and (max-width:520px){
+    .container-links-secao1{
+        flex-direction: column;
+    }
+    .container-links-secao1 .link{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+    }
+    .container-icones{
+        margin-top: 32px;
+        gap: 32px;
+    }
+    .container-icones img{
+        width: 44px;
     }
 }
