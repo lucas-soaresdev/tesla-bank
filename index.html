@@ -316,19 +316,11 @@
         const target = document.querySelector('.animacao1')
         const animation = 'animation'
 
-        if(menuMobile.classList.contains('open')){
-            menuMobile.classList.remove('open')
-            corpo.classList.remove('esconder')
-            rodape.classList.remove('esconder')
-            tracos.classList.remove('animacao')
-
-        }
-        else{
-            menuMobile.classList.add('open')
-            tracos.classList.add('animacao')
-            corpo.classList.add('esconder')
-            rodape.classList.add('esconder')
-        }
+        menuMobile.classList.toggle('open')
+        corpo.classList.toggle('esconder')
+        rodape.classList.toggle('esconder')
+        tracos.classList.toggle('animacao')
+       
     }
 
    AOS.init();
